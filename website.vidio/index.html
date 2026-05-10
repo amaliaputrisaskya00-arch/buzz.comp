@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BUZZFILMS</title>
+
+  <link rel="stylesheet" href="project1.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div class="intro">
+  <h1>BUZZ COMP</h1>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">BUZZ COMP</div>
+
+  <ul>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#showreel">Showreel</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="vidio.mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>A POET'S JOURNEY</h1>
+    <p>Cinematic storytelling collective</p>
+
+    <div class="hero-buttons">
+      <a href="#works" class="btn">WORKS</a>
+      <a href="#showreel" class="btn">SHOWREEL</a>
+      <a href="#team" class="btn">OUR TEAM</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- WORKS -->
+<section class="works" id="works">
+
+  <h2>OUR POEM</h2>
+
+  <div class="grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <a href="https://youtu.be/zCxRCfUeAiI?si=bMloixd0eAYGdNFq" target="_blank">
+        <img src="FOTO1.jpeg" alt="project">
+      </a>
+
+      <div class="card-content">
+        <h3>FETISH STANDARISASI</h3>
+        <p>Adam me-representasikan ide cerita yang telah ia buat, namun ocid risau mengenai dana produksi film tersebut.</p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <a href="https://youtu.be/FKijnRja8is?si=ZW0Ph1wO2-so8oTu" target="_blank">
+        <img src="FOTO2.jpeg" alt="project">
+      </a>
+
+      <div class="card-content">
+        <h3>FOTO 2</h3>
+        <p>Visual storytelling project.</p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <a href="https://youtu.be/JT0R5mAoHQw?si=5fDu6mERVcxgIqW0" target="_blank">
+        <img src="FOTO3.jpeg" alt="project">
+      </a>
+
+      <div class="card-content">
+        <h3>FOTO 3</h3>
+        <p>Travel cinematic reel.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SHOWREEL -->
+<section class="showreel" id="showreel">
+
+  <h2>SHOWREEL</h2>
+
+  <div class="showreel-box">
+
+    <video autoplay loop controls>
+    <source src="vidio.mp4" type="video/mp4">
+</video>
+  </div>
+
+  <p>Our cinematic journey in one reel</p>
+
+</section><section class="showreel" id="showreel">
+
+  <h2>SHOWREEL</h2>
+
+  <div class="showreel-box">
+
+    <video controls width="100%">
+      <source src="vidio.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <p>Our cinematic journey in one reel</p>
+
+</section>
+<!-- TEAM -->
+<section class="team" id="team">
+
+  <h2>OUR TEAM</h2>
+
+  <p>Director – CIDDKOCID</p>
+  <p>Cinematographer – RAYANADIFS</p>
+  <p>Editor – ASEP</p>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <h2>LET'S CREATE SOMETHING</h2>
+
+  <div class="socials">
+
+  <a href="https://instagram.com/buzz.comp" target="_blank"class="social-btn">
+            <span>📸</span> instagram
+
+        </a>
+</a>
+
+  <a href="https://youtube.com" target="_blank" class="social-btn">
+    <span>▶</span> YouTube
+  </a>
+
+  <a href="https://tiktok.com" target="_blank" class="social-btn">
+    <span>🎵</span> TikTok
+  </a>
+
+</div>
+
+</section>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      card.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
